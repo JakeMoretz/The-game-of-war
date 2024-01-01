@@ -31,6 +31,7 @@ body {
     border: none;
     font-weight: 600;
     cursor: pointer;
+    color: black;
 }
 
 .draw-card-btn {
@@ -42,6 +43,7 @@ body {
     background-color: #c9ab12;
     font-weight: 600;
     cursor: pointer;
+    color: black;
 }
 
 .card-section {
@@ -115,4 +117,51 @@ body {
     padding-inline: 50px;
     color: rgb(206, 205, 205);
     font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        width: 100vw;
+    }
+
+    .title {
+        margin-top: 30px;
+    }
+
+    .top-section {
+        flex-direction: column;
+    }
+
+    .btn {
+        font-size: 1.1em;
+    }
+
+    .cards-left {
+        font-size: 1.1em;
+        padding-right: 10px;
+        padding-bottom: 15px;
+    }
+
+    .draw-card-btn {
+        font-size: 1.1em;
+    }
+
+    .game-over {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .winner-section {
+        margin: 0;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+
+    .get-new-deck {
+        margin: 0;
+        padding-bottom: 25px;
+    }
 }
